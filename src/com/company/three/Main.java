@@ -15,24 +15,24 @@ public class Main {
         Scanner in = new Scanner(System.in);
         int number = in.nextInt();
 
-        if(isPalindrome(number)){
-            System.out.printf("%s is a palindrome",number);
-        }else{
+        if (isPalindrome(number)) {
+            System.out.printf("%s is a palindrome", number);
+        } else {
             System.out.printf("%s is not a palindrome", number);
         }
 
 
     }
 
-    public static int reverseWithString(int number){
+    public static int reverseWithString(int number) {
 
         //this method reverses the number using a String as intermediate value, then converting it to an int
-        //but you could use Integer.reverse(number) to get the same value as below
+
 
         String reverseString = "";
-        while(number != 0) {
+        while (number != 0) {
             reverseString += Integer.toString(number % 10);
-            number = number /10;
+            number = number / 10;
         }
 
 
