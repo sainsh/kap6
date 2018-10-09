@@ -18,13 +18,13 @@ public class Main {
         String output = "";
 
 
-        for (int i = 1; i < n + 1; i++) {
+        for (int i = 1; i < n + 1; i++) {   //giver n linjer
 
-            for(int m = n ; m > i; m--){
+            for(int m = n ; m > i; m--){    //formaterer outputtet
                 output += "\t";
             }
 
-            for (int j = i; j > 0; j--) {
+            for (int j = i; j > 0; j--) {//skriver tallene n n-1 n-2 ...
 
                 output+= j + "\t";
 
